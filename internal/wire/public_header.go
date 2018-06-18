@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/lucas-clemente/quic-go/internal/utils"
-	"github.com/lucas-clemente/quic-go/qerr"
+	"github.com/MeABc/quic-go/internal/protocol"
+	"github.com/MeABc/quic-go/internal/utils"
+	"github.com/MeABc/quic-go/qerr"
 )
 
 var (
@@ -107,7 +107,7 @@ func parsePublicHeader(b *bytes.Reader, packetSentBy protocol.Perspective) (*Hea
 	header.VersionFlag = publicFlagByte&0x01 > 0
 
 	// TODO: activate this check once Chrome sends the correct value
-	// see https://github.com/lucas-clemente/quic-go/issues/232
+	// see https://github.com/MeABc/quic-go/issues/232
 	// if publicFlagByte&0x04 > 0 {
 	// 	return nil, errors.New("diversification nonces should only be sent by servers")
 	// }

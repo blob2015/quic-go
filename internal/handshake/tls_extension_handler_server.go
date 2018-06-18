@@ -5,12 +5,12 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/lucas-clemente/quic-go/qerr"
+	"github.com/MeABc/quic-go/qerr"
 
 	"github.com/bifurcation/mint"
 	"github.com/bifurcation/mint/syntax"
-	"github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/lucas-clemente/quic-go/internal/utils"
+	"github.com/MeABc/quic-go/internal/protocol"
+	"github.com/MeABc/quic-go/internal/utils"
 )
 
 type extensionHandlerServer struct {
